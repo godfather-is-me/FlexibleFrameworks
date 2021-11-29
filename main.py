@@ -1,7 +1,8 @@
 import streamlit as st
+import T1
 
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 
 def draw_sidebar():
     topics = [
@@ -14,7 +15,7 @@ def draw_sidebar():
     page = st.sidebar.radio("", topics)
 
     if page == topics[0]:
-        pass
+        T1.draw_all()
     elif page == topics[1]:
         pass
     elif page == topics[2]:

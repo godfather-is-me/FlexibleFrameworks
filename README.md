@@ -1,3 +1,3 @@
 # FlexibleFrameworks
 
-To provide flexible frameworks and store NoSQL like data
+Using flexible templates made by the user to store and retreive noSQL data from the cloud (FireStore)
