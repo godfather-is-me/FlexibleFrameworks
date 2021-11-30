@@ -1,8 +1,21 @@
 import streamlit as st
+from google.cloud import firestore
+
+# pages
 import T1
 
 # import pandas as pd
 # import numpy as np
+
+#def auth():
+#    db = firestore.Client.from_service_account_json("firestore-key.json")
+    
+#    doc_ref = db.collection("template1").document("1")
+#    doc = doc_ref.get()
+
+#    st.write("The id is: ", doc.id)
+#    st.write("The contents are: ", doc.to_dict())
+    
 
 def draw_sidebar():
     topics = [

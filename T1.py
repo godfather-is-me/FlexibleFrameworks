@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def title():
-    st.markdown("## Template 1 \n\n ---")
+    st.markdown("## Template 1 \n ---")
 
 def content():
     if st.button('Balloons?'):
