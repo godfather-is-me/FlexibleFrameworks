@@ -4,9 +4,6 @@ from google.cloud import firestore
 # pages
 import T1
 
-# import pandas as pd
-# import numpy as np
-
 #def auth():
 #    db = firestore.Client.from_service_account_json("firestore-key.json")
     
