@@ -13,6 +13,7 @@ def content():
         firstName = st.text_input("First name: ")
         lastName = st.text_input("Last name: ")
         studentNumber = st.text_input("Student number: ")
+        fatherName = st.text_input("Father name")
         DOB = st.date_input("Date of Birth: ")
         DOB = datetime.datetime(
             DOB.year,
@@ -28,7 +29,8 @@ def content():
             "First Name" : firstName,
             "Last Name" : lastName,
             "Student Number" : studentNumber,
-            "DOB" : DOB
+            "DOB" : DOB,
+            "Father name" : fatherName
         })
 
 

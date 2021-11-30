@@ -4,6 +4,7 @@ from google.cloud import firestore
 # pages
 import T1
 import T2
+import T3
 import Outcome
 
 def auth():
@@ -42,7 +43,7 @@ def draw_sidebar():
     elif page == topics[1]:
         T2.draw_all()
     elif page == topics[2]:
-        pass
+        T3.draw_all()
     elif page == topics[3]:
         Outcome.draw_all()
     else:

@@ -15,3 +15,7 @@ And to activate it on windows, navigate through the folder by
 ```<Folder name>/Scripts```
 
 And type ```activate``` . And `deactivate` to deactivate it when required.
+
+---
+
+Simple project to test firestore API along with data manipulation using different templates and structures within the same template
