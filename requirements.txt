@@ -1,5 +1,4 @@
 toml
-json
 pandas
 streamlit
 google-cloud-firestore
