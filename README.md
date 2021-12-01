@@ -62,3 +62,12 @@ main
 - The NoSQL database relies on the student number being the Unique identifier to each document (as defined by the user) and therefore requires to input a different student number with every form. (Can be changed with design, constraint to only current program)
 - The code also relies on sending and retrieval of data via a private key to its corresponding firestore account. To ensure the code works in your system, create a firestore account and add the `private-key.json` file to the parent directory of the working folder. 
 
+### Useful Links
+
+- Modularized input widgets (Streamit documentation)
+  - https://docs.streamlit.io/library/api-reference/widgets
+- Simple streamlit-firestore tutorial
+  - https://blog.streamlit.io/streamlit-firestore/
+  - https://blog.streamlit.io/streamlit-firestore-continued/
+- Data retreival and upload with firebase
+  - https://firebase.google.com/docs/firestore/manage-data/add-data
