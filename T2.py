@@ -1,5 +1,6 @@
-import streamlit as st
 import datetime
+import streamlit as st
+import Authentication as A
 
 from google.cloud import firestore
 
@@ -7,7 +8,7 @@ def title():
     st.markdown("## Template 2 \n ---")
 
 def content():
-    db = firestore.Client.from_service_account_json("../firestore-key.json")
+    db = A.auth_DB()
 
     with st.form(key = "Form 2"):
         firstName = st.text_input("First name: ")

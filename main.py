@@ -1,5 +1,4 @@
 import streamlit as st
-from google.cloud import firestore
 
 # pages
 import T1
@@ -7,13 +6,6 @@ import T2
 import T3
 import Outcome
 import AddButton
-
-def auth():
-    # Simple check to see if connection is made with database
-    try:
-        db = firestore.Client.from_service_account_json("../firestore-key.json")
-    except:
-        print("Authentication error")
 
 def draw_sidebar():
     topics = [
@@ -43,7 +35,6 @@ def draw_sidebar():
 # Side bar always drawn
 def draw_main():
     draw_sidebar()
-    auth()
 
 # Main page call
 draw_main()

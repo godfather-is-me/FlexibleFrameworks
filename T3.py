@@ -1,6 +1,5 @@
 import streamlit as st
-
-from google.cloud import firestore
+import Authentication as A
 
 STUDENT_NUMBER_FIELD = "Student Number"
 SUBMIT_FORM_FIELD = "Submit form"
@@ -12,7 +11,7 @@ def title():
     st.markdown("## Template 3 \n ---")
 
 def content():
-    db = firestore.Client.from_service_account_json("../firestore-key.json")
+    db = A.auth_DB()
 
     # To student number and submit button to form
     fix_empty_form()

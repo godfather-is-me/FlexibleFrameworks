@@ -1,3 +1,6 @@
+toml
+json
 pandas
 streamlit
 google-cloud-firestore
+google-auth-oauthlib

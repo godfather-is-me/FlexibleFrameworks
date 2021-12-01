@@ -1,13 +1,12 @@
-import streamlit as st
 import datetime
-
-from google.cloud import firestore
+import streamlit as st
+import Authentication as A
 
 def title():
     st.markdown("## Template 1 \n ---")
 
 def content():
-    db = firestore.Client.from_service_account_json("../firestore-key.json")
+    db = A.auth_DB()
 
     # Simple collect and upload data in template 1
     with st.form(key = "Form 1"):

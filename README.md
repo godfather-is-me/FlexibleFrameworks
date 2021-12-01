@@ -37,6 +37,7 @@ Below is the directory structure of the web app
 main
 ├── Readme.md
 ├── main.py
+├── Authentication.py
 ├── T1.py
 ├── T2.py
 ├── T3.py
@@ -45,6 +46,9 @@ main
 ```
 
 > `main.py` is the main file which navigates across the several pages. It is also where the sidebar is initiated and kept constant throughout the app
+---
+
+> `Authentication.py` is the file used to authenticate the database with the server using private/secret keys
 ---
 
 > `T1.py` and `T2.py` are dummy templates used for testing and creating new templates as when required manually. It contains the basic code for sending and retreiving files from the FireStore server (NoSQL database)
