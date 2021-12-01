@@ -75,3 +75,11 @@ main
   - https://blog.streamlit.io/streamlit-firestore-continued/
 - Data retreival and upload with firebase
   - https://firebase.google.com/docs/firestore/manage-data/add-data
+
+### Live project
+
+Use the following link to find the deployed projected interacting with the server
+
+- https://share.streamlit.io/godfather-is-me/flexibleframeworks/main/main.py
+
+With the help of the outcome page you can see the retreived data
