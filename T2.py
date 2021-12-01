@@ -9,8 +9,6 @@ def title():
 def content():
     db = firestore.Client.from_service_account_json("../firestore-key.json")
 
-    # dob = st.date_input("Date of birth: ", va)
-
     with st.form(key = "Form 2"):
         firstName = st.text_input("First name: ")
         lastName = st.text_input("Last name: ")

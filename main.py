@@ -6,32 +6,21 @@ import T1
 import T2
 import T3
 import Outcome
+import AddButton
 
 def auth():
-    db = firestore.Client.from_service_account_json("../firestore-key.json")
-    
-    smth = """ doc_ref = db.collection("posts").document("Google")
-
-    # Set a new document
-    doc_ref = db.collection("posts").document("Apple")
-    if not (doc_ref.get() is None):
-        doc_ref.set({
-            "title" : "Apple",
-            "url" : "apple.com"
-        })
-
-    # Read all values
-    posts_ref = db.collection("posts")
-    for doc in posts_ref.stream():
-        st.write("The id is: ", doc.id)
-        st.write("The contents are: ", doc.to_dict()) """
-    
+    # Simple check to see if connection is made with database
+    try:
+        db = firestore.Client.from_service_account_json("../firestore-key.json")
+    except:
+        print("Authentication error")
 
 def draw_sidebar():
     topics = [
         "Template 1",
         "Template 2",
         "Template 3",
+        "Add button",
         "Outcome"
     ]
 
@@ -45,6 +34,8 @@ def draw_sidebar():
     elif page == topics[2]:
         T3.draw_all()
     elif page == topics[3]:
+        AddButton.draw_all()
+    elif page == topics[4]:
         Outcome.draw_all()
     else:
         pass
